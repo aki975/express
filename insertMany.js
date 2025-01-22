@@ -1,7 +1,7 @@
 const { MongoClient } = require("mongodb"); 
 
  // 下のURIをご自分の値に変更してください
-const uri =  "*"; 
+const uri =  process.env.MONGODB_URI;
 
 const client = new MongoClient(uri);
 async function run() {
